@@ -35,7 +35,7 @@ export default function Materials() {
       <Helmet>
         <title>Construction Materials | Sri Selvamurugan - River Sand, M-Sand, Stone Jalli</title>
         <meta name="description" content="Explore our premium range of construction materials available for delivery in Chennai, Chengalpattu, Thiruporur, ECR, OMR and surrounding areas. River Sand, M-Sand, Stone Jalli, and filling gravel." />
-        <link rel="canonical" href="https://example.com/materials" />
+        <link rel="canonical" href="https://www.sriselvamurugan.com/materials" />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">

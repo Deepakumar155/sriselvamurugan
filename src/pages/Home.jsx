@@ -10,7 +10,7 @@ export default function Home() {
       <Helmet>
         <title>Sri Selvamurugan Transport & Suppliers | Construction Materials in Chennai</title>
         <meta name="description" content="Sri Selvamurugan Transport & Suppliers - Premium construction materials supplier in Chennai, Chengalpattu, Thiruporur, ECR & OMR. Quality River Sand, M-Sand, Stone Jalli, JCB & Lorry delivery." />
-        <link rel="canonical" href="https://example.com/" />
+        <link rel="canonical" href="https://www.sriselvamurugan.com/" />
       </Helmet>
       {/* Hero */}
       <section className="relative pt-16 pb-20 sm:pt-24 sm:pb-32 bg-slate-900 text-white overflow-hidden border-b border-slate-800">

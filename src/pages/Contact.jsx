@@ -8,7 +8,7 @@ export default function Contact() {
       <Helmet>
         <title>Contact Sri Selvamurugan | Request a Quote for Construction Materials</title>
         <meta name="description" content="Get in touch with Sri Selvamurugan Transport & Suppliers to request a quote for construction materials, arrange transport, or book JCB machinery." />
-        <link rel="canonical" href="https://example.com/contact" />
+        <link rel="canonical" href="https://www.sriselvamurugan.com/contact" />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">

@@ -8,7 +8,7 @@ export default function Services() {
       <Helmet>
         <title>JCB & Lorry Services | Sri Selvamurugan Transport Chennai</title>
         <meta name="description" content="Expert JCB excavation and lorry transportation services for construction sites across Chennai, Chengalpattu, Thiruporur, ECR, OMR, Tambaram, and Medavakkam. Reliable material delivery." />
-        <link rel="canonical" href="https://example.com/services" />
+        <link rel="canonical" href="https://www.sriselvamurugan.com/services" />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">

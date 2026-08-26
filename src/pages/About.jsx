@@ -7,7 +7,7 @@ export default function About() {
       <Helmet>
         <title>About Us | Sri Selvamurugan Transport & Suppliers</title>
         <meta name="description" content="Meet the Founder & CEO of Sri Selvamurugan Transport & Suppliers. Learn about our commitment to quality sand, aggregates, JCB services, and tipper lorry logistics across Chennai." />
-        <link rel="canonical" href="https://example.com/about" />
+        <link rel="canonical" href="https://www.sriselvamurugan.com/about" />
       </Helmet>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
