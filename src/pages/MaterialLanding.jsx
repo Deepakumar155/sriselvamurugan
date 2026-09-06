@@ -59,9 +59,15 @@ export default function MaterialLanding({ pageKey }) {
   const canonical = `${siteUrl}/${page.route}`;
   const schema = {
     '@context': 'https://schema.org', '@graph': [
-      page.schemaType === 'Service'
-        ? { '@type': 'Service', name: page.name, description: page.intro, image: `${siteUrl}${page.image}`, url: canonical, provider: { '@type': 'LocalBusiness', name: 'Sri Selvamurugan Transport & Suppliers', telephone: phone } }
-        : { '@type': 'Product', name: page.name, description: page.intro, image: `${siteUrl}${page.image}`, url: canonical, brand: { '@type': 'Brand', name: 'Sri Selvamurugan Transport & Suppliers' } },
+      {
+        '@type': 'Service',
+        name: page.name,
+        serviceType: page.schemaType === 'Service' ? page.name : `${page.name} supply`,
+        description: page.intro,
+        image: `${siteUrl}${page.image}`,
+        url: canonical,
+        provider: { '@id': `${siteUrl}/#business` }
+      },
       { '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
         { '@type': 'ListItem', position: 2, name: page.name, item: canonical }
