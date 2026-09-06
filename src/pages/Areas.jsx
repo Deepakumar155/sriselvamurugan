@@ -3,6 +3,12 @@ import { Helmet } from 'react-helmet-async';
 
 const areas = ['Chennai', 'Tambaram', 'Pallavaram', 'Chromepet', 'Medavakkam', 'Perungalathur', 'Vandalur', 'Guduvanchery', 'OMR', 'ECR', 'Sholinganallur', 'Kelambakkam', 'Thiruporur', 'Chengalpattu'];
 const canonical = 'https://www.sriselvamurugan.com/areas-we-serve';
+const featuredAreas = [
+  ['Chengalpattu', '/construction-materials-chengalpattu', 'Materials and delivery enquiries for Chengalpattu sites and nearby southern locations.'],
+  ['Thiruporur', '/construction-materials-thiruporur', 'Construction material supply across Thiruporur and the surrounding OMR/ECR corridor.'],
+  ['Kelambakkam', '/construction-materials-kelambakkam', 'M-Sand, aggregates and transport enquiries for Kelambakkam project sites.'],
+  ['Tambaram', '/construction-materials-tambaram', 'Material and lorry-delivery enquiries for Tambaram and nearby neighbourhoods.']
+];
 
 export default function Areas() {
   const schema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.sriselvamurugan.com/' }, { '@type': 'ListItem', position: 2, name: 'Areas We Serve', item: canonical }] };
@@ -24,6 +30,11 @@ export default function Areas() {
         <h2 className="text-2xl sm:text-3xl font-display font-bold text-brand-dark dark:text-white">Areas we serve</h2>
         <p className="mt-3 text-slate-600 dark:text-slate-300">Tell us your delivery location and material requirement so we can confirm availability and transport options for your site.</p>
         <ul className="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">{areas.map(area => <li key={area} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-4 font-medium text-brand-dark dark:text-white">{area}</li>)}</ul>
+      </section>
+      <section className="mt-14">
+        <h2 className="text-2xl sm:text-3xl font-display font-bold text-brand-dark dark:text-white">Featured service areas</h2>
+        <p className="mt-3 text-slate-600 dark:text-slate-300">For these larger service areas, you can find more detail about materials, delivery and how to enquire.</p>
+        <div className="mt-6 grid sm:grid-cols-2 gap-5">{featuredAreas.map(([name, route, copy]) => <article key={name} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6"><h3 className="text-xl font-display font-bold text-brand-dark dark:text-white">Construction materials in {name}</h3><p className="mt-2 text-slate-600 dark:text-slate-300">{copy}</p><Link to={route} className="inline-block mt-4 text-brand-600 dark:text-brand-400 font-semibold hover:underline">Learn about {name} &rarr;</Link></article>)}</div>
       </section>
       <section className="mt-14 bg-white dark:bg-slate-900 p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-slate-800">
         <h2 className="text-2xl font-display font-bold text-brand-dark dark:text-white">Planning a delivery?</h2>

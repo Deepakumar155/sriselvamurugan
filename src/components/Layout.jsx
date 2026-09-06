@@ -213,7 +213,7 @@ export default function Layout() {
                 </div>
               </Link>
               <p className="text-slate-400 max-w-sm text-sm sm:text-base">
-                Construction-material supply for Chennai and nearby areas: River Sand, M-Sand, Stone Jalli, Filling Gravel, JCB work and lorry delivery.
+                Construction-material supply across Chennai, Chengalpattu and nearby areas: River Sand, M-Sand, Stone Jalli, Filling Gravel, JCB work and lorry delivery.
               </p>
             </div>
             <div>

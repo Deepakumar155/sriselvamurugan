@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <div>
       <Helmet>
-        <title>M-Sand & Construction Materials Supplier in Chennai | Sri Selvamurugan</title>
-        <meta name="description" content="Order River Sand, M-Sand, Stone Jalli, Filling Gravel and Red Sand in Chennai. We provide construction-material supply, JCB work and lorry delivery across OMR, ECR, Thiruporur and Chengalpattu." />
+        <title>Construction Materials Supplier in Chennai & Chengalpattu | Sri Selvamurugan</title>
+        <meta name="description" content="M-Sand, River Sand, Stone Jalli, Filling Gravel and Red Sand with JCB and lorry support across Chennai, Chengalpattu, Thiruporur, Kelambakkam, OMR and ECR." />
         <link rel="canonical" href="https://www.sriselvamurugan.com/" />
-        <meta property="og:title" content="M-Sand & Construction Materials Supplier in Chennai | Sri Selvamurugan" />
-        <meta property="og:description" content="M-Sand, River Sand, Stone Jalli, Filling Gravel, JCB work and lorry delivery in Chennai and nearby areas." />
+        <meta property="og:title" content="Construction Materials Supplier in Chennai & Chengalpattu | Sri Selvamurugan" />
+        <meta property="og:description" content="M-Sand, River Sand, Stone Jalli, Filling Gravel, JCB work and lorry delivery across Chennai and nearby areas." />
         <meta property="og:url" content="https://www.sriselvamurugan.com/" />
       </Helmet>
       {/* Hero */}
@@ -37,7 +37,7 @@ export default function Home() {
               transition={{ delay: 0.1 }}
               className="text-4xl sm:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight tracking-tight"
             >
-              River Sand, M-Sand & Stone Jalli <span className="text-brand-500">Supplier in Chennai</span>
+              M-Sand, River Sand & Construction Materials <span className="text-brand-500">for Chennai & Chengalpattu</span>
             </motion.h1>
             
             <motion.p 
@@ -46,7 +46,7 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="text-base sm:text-lg lg:text-xl text-slate-300 mb-8 sm:mb-10 leading-relaxed font-light"
             >
-              Order River Sand, M-Sand, Stone Jalli, Filling Gravel and Red Sand for your construction project, with JCB support and lorry delivery across Chennai and nearby areas.
+              Order River Sand, M-Sand, Stone Jalli, Filling Gravel and Red Sand for your construction project, with JCB support and lorry delivery across Chennai, Chengalpattu, Thiruporur, Kelambakkam, OMR and ECR.
             </motion.p>
             
             <motion.div 
@@ -74,10 +74,10 @@ export default function Home() {
           </div>
           <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
-              ['M-Sand', '/m-sand-supplier-chennai'], ['River Sand', '/river-sand-supplier-chennai'], ['Stone Jalli / Blue Metal', '/stone-jalli-supplier-chennai'], ['Filling Gravel', '/filling-gravel-supplier-chennai']
+              ['M-Sand', '/m-sand'], ['River Sand', '/river-sand'], ['Stone Jalli / Blue Metal', '/stone-jalli'], ['Filling Gravel', '/filling-gravel']
             ].map(([name, path]) => <Link key={path} to={path} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 font-semibold text-brand-dark dark:text-white hover:border-brand-500 transition-colors">{name} <span className="block mt-2 text-sm text-brand-600 dark:text-brand-400">Learn more &rarr;</span></Link>)}
           </div>
-          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold"><Link to="/jcb-lorry-services-chennai" className="text-brand-600 dark:text-brand-400 hover:underline">JCB & lorry services &rarr;</Link><Link to="/areas-we-serve" className="text-brand-600 dark:text-brand-400 hover:underline">Areas we serve &rarr;</Link></div>
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold"><Link to="/jcb-lorry-services" className="text-brand-600 dark:text-brand-400 hover:underline">JCB & lorry services &rarr;</Link><Link to="/areas-we-serve" className="text-brand-600 dark:text-brand-400 hover:underline">Areas we serve &rarr;</Link></div>
         </div>
       </section>
       
@@ -158,7 +158,7 @@ export default function Home() {
       {/* Areas We Serve */}
       <section className="py-16 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-display font-bold text-brand-dark dark:text-white mb-4">Proudly Serving Chennai & Surrounding Areas</h2>
+          <h2 className="text-3xl font-display font-bold text-brand-dark dark:text-white mb-4">Serving Chennai, Chengalpattu & Nearby Areas</h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-8">
             We provide fast and reliable delivery of construction materials and machinery to construction sites across the greater Chennai region.
           </p>
@@ -169,6 +169,7 @@ export default function Home() {
               </span>
             ))}
           </div>
+          <Link to="/areas-we-serve" className="inline-block mt-8 text-brand-600 dark:text-brand-400 font-semibold hover:underline">Explore our delivery areas &rarr;</Link>
         </div>
       </section>
     </div>

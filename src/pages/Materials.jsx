@@ -5,34 +5,35 @@ import { Helmet } from 'react-helmet-async';
 const materials = [
   {
     name: 'River Sand',
-    route: '/river-sand-supplier-chennai',
+    route: '/river-sand',
     alt: 'River sand for construction work',
     description: 'Natural River Sand for masonry, concrete and fine plastering work. Contact us to check availability and delivery to your Chennai-area site.',
     image: '/images/riversand.jpg'
   },
   {
     name: 'M-Sand',
-    route: '/m-sand-supplier-chennai',
+    route: '/m-sand',
     alt: 'M-Sand for construction material supply',
     description: 'M-Sand (manufactured sand) for concrete, block work and heavy construction. Available with direct lorry delivery.',
     image: '/images/m-sand.jpg'
   },
   {
     name: 'Stone Jalli',
-    route: '/stone-jalli-supplier-chennai',
+    route: '/stone-jalli',
     alt: 'Stone jalli construction aggregate',
     description: 'Stone Jalli / crushed aggregate for foundations, roads and concrete mixtures, supplied for residential and commercial projects.',
     image: '/images/stone-jalli.jpg'
   },
   {
     name: 'Filling Gravel',
-    route: '/filling-gravel-supplier-chennai',
+    route: '/filling-gravel',
     alt: 'Filling gravel for site preparation',
     description: 'Filling Gravel for site filling, levelling and drainage preparation. Ask for the right quantity for your site.',
     image: '/images/filling-gravel.jpg'
   },
   {
     name: 'Red Sand',
+    route: '/red-sand',
     alt: 'Red sand for filling and landscaping work',
     description: 'Red Sand for filling, landscaping and selected construction requirements, delivered to sites across Chennai and nearby areas.',
     image: '/images/red-sand.jpg'
@@ -43,17 +44,17 @@ export default function Materials() {
   return (
     <div className="py-20 bg-slate-50 dark:bg-slate-950 min-h-screen transition-colors duration-300">
       <Helmet>
-        <title>River Sand, M-Sand, Stone Jalli & Gravel in Chennai | Materials</title>
-        <meta name="description" content="Buy River Sand, M-Sand, Stone Jalli, Filling Gravel and Red Sand with site delivery in Chennai, OMR, ECR, Thiruporur and Chengalpattu. Request a material quote today." />
+        <title>River Sand, M-Sand & Construction Materials | Sri Selvamurugan</title>
+        <meta name="description" content="Explore River Sand, M-Sand, Stone Jalli, Filling Gravel and Red Sand with delivery across Chennai, Chengalpattu, Thiruporur, Kelambakkam, OMR and ECR." />
         <link rel="canonical" href="https://www.sriselvamurugan.com/materials" />
-        <meta property="og:title" content="River Sand, M-Sand, Stone Jalli & Gravel in Chennai" />
+        <meta property="og:title" content="River Sand, M-Sand & Construction Materials | Sri Selvamurugan" />
         <meta property="og:description" content="Explore construction materials supplied with delivery across Chennai and nearby areas." />
         <meta property="og:url" content="https://www.sriselvamurugan.com/materials" />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-brand-dark dark:text-white mb-4">River Sand, M-Sand, Stone Jalli & Gravel in Chennai</h1>
-          <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">Sri Selvamurugan supplies River Sand, M-Sand, Stone Jalli, Filling Gravel and Red Sand for construction sites across Chennai, OMR, ECR, Thiruporur and Chengalpattu.</p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-brand-dark dark:text-white mb-4">River Sand, M-Sand & Construction Materials</h1>
+          <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto">Sri Selvamurugan supplies River Sand, M-Sand, Stone Jalli, Filling Gravel and Red Sand for sites across Chennai, OMR, ECR, Thiruporur, Kelambakkam and Chengalpattu.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
