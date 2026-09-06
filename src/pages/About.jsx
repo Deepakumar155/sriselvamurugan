@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import { Award, ShieldCheck, Truck, Users, Quote } from 'lucide-react';
+import { Award, ShieldCheck, Truck, Quote } from 'lucide-react';
 
 export default function About() {
   return (
@@ -8,6 +8,9 @@ export default function About() {
         <title>About Us | Sri Selvamurugan Transport & Suppliers</title>
         <meta name="description" content="Meet the Founder & CEO of Sri Selvamurugan Transport & Suppliers. Learn about our commitment to quality sand, aggregates, JCB services, and tipper lorry logistics across Chennai." />
         <link rel="canonical" href="https://www.sriselvamurugan.com/about" />
+        <meta property="og:title" content="About Sri Selvamurugan Transport & Suppliers" />
+        <meta property="og:description" content="Learn about our construction-material supply, JCB services and lorry logistics across Chennai." />
+        <meta property="og:url" content="https://www.sriselvamurugan.com/about" />
       </Helmet>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -36,6 +39,9 @@ export default function About() {
                   <img
                     src="/images/founder.jpg"
                     alt="Founder and CEO of Sri Selvamurugan Transport & Suppliers"
+                    width="681"
+                    height="1024"
+                    loading="lazy"
                     className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>

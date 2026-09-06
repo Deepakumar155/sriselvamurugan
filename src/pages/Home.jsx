@@ -8,9 +8,12 @@ export default function Home() {
   return (
     <div>
       <Helmet>
-        <title>Sri Selvamurugan Transport & Suppliers | Construction Materials in Chennai</title>
-        <meta name="description" content="Sri Selvamurugan Transport & Suppliers - Premium construction materials supplier in Chennai, Chengalpattu, Thiruporur, ECR & OMR. Quality River Sand, M-Sand, Stone Jalli, JCB & Lorry delivery." />
+        <title>M-Sand & Construction Materials Supplier in Chennai | Sri Selvamurugan</title>
+        <meta name="description" content="Order River Sand, M-Sand, Stone Jalli, Filling Gravel and Red Sand in Chennai. We provide construction-material supply, JCB work and lorry delivery across OMR, ECR, Thiruporur and Chengalpattu." />
         <link rel="canonical" href="https://www.sriselvamurugan.com/" />
+        <meta property="og:title" content="M-Sand & Construction Materials Supplier in Chennai | Sri Selvamurugan" />
+        <meta property="og:description" content="M-Sand, River Sand, Stone Jalli, Filling Gravel, JCB work and lorry delivery in Chennai and nearby areas." />
+        <meta property="og:url" content="https://www.sriselvamurugan.com/" />
       </Helmet>
       {/* Hero */}
       <section className="relative pt-16 pb-20 sm:pt-24 sm:pb-32 bg-slate-900 text-white overflow-hidden border-b border-slate-800">
@@ -34,7 +37,7 @@ export default function Home() {
               transition={{ delay: 0.1 }}
               className="text-4xl sm:text-6xl lg:text-7xl font-display font-bold text-white mb-6 leading-tight tracking-tight"
             >
-              Building the Future with <span className="text-brand-500">Quality</span> Materials
+              River Sand, M-Sand & Stone Jalli <span className="text-brand-500">Supplier in Chennai</span>
             </motion.h1>
             
             <motion.p 
@@ -43,7 +46,7 @@ export default function Home() {
               transition={{ delay: 0.2 }}
               className="text-base sm:text-lg lg:text-xl text-slate-300 mb-8 sm:mb-10 leading-relaxed font-light"
             >
-              We provide top-grade River Sand, M-Sand, Aggregates, along with heavy machinery and logistics support for your next construction project.
+              Order River Sand, M-Sand, Stone Jalli, Filling Gravel and Red Sand for your construction project, with JCB support and lorry delivery across Chennai and nearby areas.
             </motion.p>
             
             <motion.div 
@@ -60,6 +63,21 @@ export default function Home() {
               </Link>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 sm:py-20 bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-display font-bold text-brand-dark dark:text-white">Construction materials for every stage of your project</h2>
+            <p className="mt-4 text-slate-600 dark:text-slate-400 leading-relaxed">Choose the material you need, then contact us with your quantity and delivery location. We supply across Chennai and nearby areas.</p>
+          </div>
+          <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              ['M-Sand', '/m-sand-supplier-chennai'], ['River Sand', '/river-sand-supplier-chennai'], ['Stone Jalli / Blue Metal', '/stone-jalli-supplier-chennai'], ['Filling Gravel', '/filling-gravel-supplier-chennai']
+            ].map(([name, path]) => <Link key={path} to={path} className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 font-semibold text-brand-dark dark:text-white hover:border-brand-500 transition-colors">{name} <span className="block mt-2 text-sm text-brand-600 dark:text-brand-400">Learn more &rarr;</span></Link>)}
+          </div>
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-sm font-semibold"><Link to="/jcb-lorry-services-chennai" className="text-brand-600 dark:text-brand-400 hover:underline">JCB & lorry services &rarr;</Link><Link to="/areas-we-serve" className="text-brand-600 dark:text-brand-400 hover:underline">Areas we serve &rarr;</Link></div>
         </div>
       </section>
       
@@ -103,6 +121,9 @@ export default function Home() {
                   <img
                     src="/images/founder.jpg"
                     alt="Founder and CEO of Sri Selvamurugan Transport & Suppliers"
+                    width="681"
+                    height="1024"
+                    loading="lazy"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>

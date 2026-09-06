@@ -1,14 +1,24 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import CustomerReviews from '../components/CustomerReviews';
 
 export default function Contact() {
+  const handleQuoteSubmit = (event) => {
+    event.preventDefault();
+    const form = new FormData(event.currentTarget);
+    const message = `Hello Sri Selvamurugan Transport, I would like a quote.\nName: ${form.get('name') || ''}\nPhone: ${form.get('phone') || ''}\nService: ${form.get('service') || ''}\nRequirement: ${form.get('message') || ''}`;
+    window.open(`https://wa.me/919962675329?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <div className="py-20 bg-white dark:bg-slate-900 min-h-screen transition-colors duration-300">
       <Helmet>
         <title>Contact Sri Selvamurugan | Request a Quote for Construction Materials</title>
         <meta name="description" content="Get in touch with Sri Selvamurugan Transport & Suppliers to request a quote for construction materials, arrange transport, or book JCB machinery." />
         <link rel="canonical" href="https://www.sriselvamurugan.com/contact" />
+        <meta property="og:title" content="Contact Sri Selvamurugan | Construction Material Quotes" />
+        <meta property="og:description" content="Request a quote for construction materials, JCB work or lorry transport in Chennai and nearby areas." />
+        <meta property="og:url" content="https://www.sriselvamurugan.com/contact" />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
@@ -62,22 +72,22 @@ export default function Contact() {
           </div>
 
           <div>
-            <form className="bg-white dark:bg-slate-900 p-6 sm:p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800 transition-colors">
+            <form onSubmit={handleQuoteSubmit} className="bg-white dark:bg-slate-900 p-6 sm:p-8 md:p-10 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-800 transition-colors">
               <h3 className="text-xl sm:text-2xl font-display font-bold text-brand-dark dark:text-white mb-6">Request a Quote</h3>
               <div className="space-y-4 sm:space-y-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
                   <div>
                     <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Name</label>
-                    <input type="text" className="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-50 dark:bg-slate-800 text-brand-dark dark:text-white border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500 text-sm sm:text-base" placeholder="Your Name" />
+                    <input type="text" name="name" required className="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-50 dark:bg-slate-800 text-brand-dark dark:text-white border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500 text-sm sm:text-base" placeholder="Your Name" />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Phone</label>
-                    <input type="tel" className="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-50 dark:bg-slate-800 text-brand-dark dark:text-white border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500 text-sm sm:text-base" placeholder="Your Phone" />
+                    <input type="tel" name="phone" required className="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-50 dark:bg-slate-800 text-brand-dark dark:text-white border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500 text-sm sm:text-base" placeholder="Your Phone" />
                   </div>
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Service Required</label>
-                  <select className="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-50 dark:bg-slate-800 text-brand-dark dark:text-white border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all text-sm sm:text-base">
+                  <select name="service" className="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-50 dark:bg-slate-800 text-brand-dark dark:text-white border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all text-sm sm:text-base">
                     <option>Material Supply (Sand, Aggregates)</option>
                     <option>JCB Service</option>
                     <option>Lorry Transport</option>
@@ -86,10 +96,10 @@ export default function Contact() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Message</label>
-                  <textarea rows="4" className="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-50 dark:bg-slate-800 text-brand-dark dark:text-white border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500 text-sm sm:text-base" placeholder="Describe your requirement, quantity, location..."></textarea>
+                  <textarea name="message" rows="4" required className="w-full px-4 py-3 sm:py-3.5 rounded-xl bg-slate-50 dark:bg-slate-800 text-brand-dark dark:text-white border border-slate-200 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all placeholder:text-slate-400 dark:placeholder:text-slate-500 text-sm sm:text-base" placeholder="Describe your requirement, quantity, location..."></textarea>
                 </div>
-                <button type="submit" onClick={(e) => e.preventDefault()} className="w-full bg-brand-500 text-white font-medium py-3.5 sm:py-4 rounded-xl hover:bg-brand-600 transition-colors shadow-lg shadow-brand-500/30 text-base sm:text-lg mt-2">
-                  Send Request
+                <button type="submit" className="w-full bg-brand-500 text-white font-medium py-3.5 sm:py-4 rounded-xl hover:bg-brand-600 transition-colors shadow-lg shadow-brand-500/30 text-base sm:text-lg mt-2">
+                  Send Quote Request on WhatsApp
                 </button>
               </div>
             </form>

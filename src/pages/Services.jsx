@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 
@@ -9,6 +8,9 @@ export default function Services() {
         <title>JCB & Lorry Services | Sri Selvamurugan Transport Chennai</title>
         <meta name="description" content="Expert JCB excavation and lorry transportation services for construction sites across Chennai, Chengalpattu, Thiruporur, ECR, OMR, Tambaram, and Medavakkam. Reliable material delivery." />
         <link rel="canonical" href="https://www.sriselvamurugan.com/services" />
+        <meta property="og:title" content="JCB & Lorry Services in Chennai | Sri Selvamurugan" />
+        <meta property="og:description" content="JCB earthwork and construction-material lorry transport across Chennai and nearby areas." />
+        <meta property="og:url" content="https://www.sriselvamurugan.com/services" />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
@@ -36,7 +38,7 @@ export default function Services() {
             <div className="lg:w-1/2 w-full">
               <div className="rounded-2xl sm:rounded-[2rem] overflow-hidden shadow-xl relative">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
-                <img src="/images/jcb.jpg" alt="JCB Service" className="w-full h-56 sm:h-80 lg:h-[400px] object-cover relative z-0" />
+                <img src="/images/jcb.jpg" alt="JCB earthwork equipment at a construction site" width="882" height="1600" loading="lazy" className="w-full h-56 sm:h-80 lg:h-[400px] object-cover relative z-0" />
               </div>
             </div>
           </div>
@@ -60,7 +62,7 @@ export default function Services() {
             <div className="lg:w-1/2 w-full">
               <div className="rounded-2xl sm:rounded-[2rem] overflow-hidden shadow-xl relative">
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent z-10"></div>
-                <img src="/images/lorry.jpg" alt="Lorry Transport" className="w-full h-56 sm:h-80 lg:h-[400px] object-cover relative z-0" />
+                <img src="/images/lorry.jpg" alt="Lorry for construction material delivery" width="1080" height="1096" loading="lazy" className="w-full h-56 sm:h-80 lg:h-[400px] object-cover relative z-0" />
               </div>
             </div>
           </div>

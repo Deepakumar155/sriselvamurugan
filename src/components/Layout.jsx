@@ -46,6 +46,7 @@ export default function Layout() {
     { name: 'Home', path: '/' },
     { name: 'Materials', path: '/materials' },
     { name: 'Services', path: '/services' },
+    { name: 'Areas', path: '/areas-we-serve' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -212,7 +213,7 @@ export default function Layout() {
                 </div>
               </Link>
               <p className="text-slate-400 max-w-sm text-sm sm:text-base">
-                Premium construction materials supplier providing River Sand, M-Sand, Aggregates along with JCB and Lorry logistics services.
+                Construction-material supply for Chennai and nearby areas: River Sand, M-Sand, Stone Jalli, Filling Gravel, JCB work and lorry delivery.
               </p>
             </div>
             <div>
@@ -244,10 +245,6 @@ export default function Layout() {
           </div>
           <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
             <p>&copy; {new Date().getFullYear()} Sri Selvamurugan Transport & Suppliers. All rights reserved.</p>
-            <div className="flex gap-4">
-              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            </div>
           </div>
         </div>
       </footer>
